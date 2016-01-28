@@ -1,0 +1,2 @@
+## create 1 container with 3 unique audio sources
+ffmpeg -i output.mp4 -i leahsiddall_twirlingunwind.mp3 -i leahsiddall_elbow.mp3 -i leahsiddall_everyworry.mp3 -map 0:0 -map 1:0 -map 2:0 -map 3:0 -c:v copy -strict experimental -c:a aac -b:a 128k -t 150  allinone.mp4 -y
